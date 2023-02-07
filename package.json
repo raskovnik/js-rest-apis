@@ -1,0 +1,22 @@
+{
+  "name": "js-rest-apis",
+  "version": "1.0.0",
+  "description": "rest api using node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raskovnik/js-rest-apis.git"
+  },
+  "author": "Anthony Mwangi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raskovnik/js-rest-apis/issues"
+  },
+  "homepage": "https://github.com/raskovnik/js-rest-apis#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
