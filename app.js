@@ -11,6 +11,8 @@ mongoose.connect("mongodb+srv://admin:"
                  +process.env.MONGO_ATLAS_PW+ 
                  "@js-rest-apis.86yzuri.mongodb.net/test");
 
+mongoose.promise = global.Promise;
+
 //middleware
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
