@@ -15,6 +15,7 @@ mongoose.promise = global.Promise;
 
 //middleware
 app.use(morgan('dev'));
+app.use("/uploads", express.static("uploads"));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use((req, res, next) => {
@@ -26,7 +27,7 @@ app.use((req, res, next) => {
         return res.status(200).json({});
     }
     next(); 
-})
+});
 
 //routes
 app.use("/products", productRoutes);
